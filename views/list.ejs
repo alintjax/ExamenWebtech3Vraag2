@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Examen</title>
+</head>
+<body>
+<h1>Alle overtredingen - Alina Storme</h1>
+<br/><br/>
+<ul>
+    <% for(var i=0; i < overtredingen.length; i++) {%>
+        <li>
+            <span><b>Id: </b><%= examen[i].id %></span><br />
+            <span><b>Datum vaststelling jaar: </b><%= examen[i].datum_vaststelling_jaar %></span><br />
+            <span><b>Datum vaststelling maand: </b><%= examen[i].datum_vaststelling_maand %></span><br />
+            <span><b>Datum vaststelling: </b><%= examen[i].datum_vaststelling %></span><br />
+            <span><b>Opnameplaats straat: </b><%= examen[i].opnameplaats_straat %></span><br />
+            <span><b>Opnameplaats rijrichting gaand: </b><%= examen[i].opnameplaats_rijrichting_gaand %></span><br />
+            <span><b>Opnameplaats zone snelheid: </b><%= examen[i].opnameplaats_zone_snelheid %></span><br />
+            <span><b>Aantal passanten: </b><%= examen[i].aantal_passanten %></span><br />
+            <span><b>Aantal overtredingen snelheid: </b><%= examen[i].aantal_overtredingen_snelheid %></span><br />
+            <span><b>Aantal overtredingen roodlicht: </b><%= examen[i].aantal_overtredingen_roodlicht %></span><br />
+        </li>
+        <br/>
+        <br/>
+    <% } %>
+</ul>
+<br />
+
+<a href='/search'>Zoek een overtreding</a>
+
+</body>
+</html>
